@@ -379,10 +379,10 @@ export default function Home({ searchParams }) {
               >
                 {t.eyebrow}
               </p>
-              <h1
-                className="heading-xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold max-w-3xl md:max-w-4xl animate-rise"
-                style={{ animationDelay: "140ms" }}
-              >
+              <div className="animate-rise" style={{ animationDelay: '100ms' }}>
+                <span className="brand-mark text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">Soluva</span>
+              </div>
+              <h1 className="heading-xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold max-w-3xl md:max-w-4xl animate-rise" style={{ animationDelay: '160ms' }}>
                 {t.heroPre}
                 <span className="text-gold">{t.heroEm}</span>
                 {t.heroPost}
