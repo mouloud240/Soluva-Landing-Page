@@ -62,6 +62,23 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Brand wordmark */
+.brand-mark {
+  background: linear-gradient(90deg, var(--gold), #f3e089, var(--gold));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 6px 18px rgba(212, 175, 55, 0.22));
+  animation: brandShimmer 10s linear infinite;
+}
+
+@keyframes brandShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Premium gradient + grid background */
 .hero-bg {
   position: relative;
