@@ -559,7 +559,7 @@ export default function Home({ searchParams }) {
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[rgba(255,255,255,0.04)] border border-[var(--border)]">
                       @
                     </span>
-                    <span>mouloudhasrane@gmail.com</span>
+                    <span>contact@soluva.dev</span>
                   </div>
                 </div>
                 <div>
@@ -644,8 +644,8 @@ export default function Home({ searchParams }) {
                     required
                   />
                 </div>
-                <div className="sm:col-span-2 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between mt-1 w-full min-w-0">
-                  <div className="flex gap-2">
+                <div className="sm:col-span-2 flex flex-col gap-3 w-full mt-1">
+                  <div className="flex flex-col gap-3 w-full">
                     <a
                       href="#lead"
                       className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium"
@@ -661,7 +661,7 @@ export default function Home({ searchParams }) {
                   </div>
                   <button
                     type="submit"
-                    className="btn-send w-full sm:w-auto max-w-full"
+                    className="btn-send w-full"
                   >
                     <svg
                       width="16"
