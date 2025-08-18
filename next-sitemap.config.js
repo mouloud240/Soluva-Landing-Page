@@ -1,14 +1,21 @@
 
-/** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://soluva.dev",
   generateRobotsTxt: true,
-  changefreq: "weekly",
-  priority: 0.7,
-  sitemapSize: 7000,
-  alternateRefs: [
-    { href: "https://soluva.dev/", hreflang: "en" },
-    { href: "https://soluva.dev/?lang=fr", hreflang: "fr" },
-    { href: "https://soluva.dev/?lang=ar", hreflang: "ar" },
-  ],
+  outDir: "./public", // ensure files go to public/
+  sitemapSize: 5000,
+  exclude: [],
+
+  // Force it to generate just one sitemap file
+  generateIndexSitemap: false,
+
+  transform: async (config, path) => {
+    return {
+      loc: path,
+      changefreq: "monthly",
+      priority: path === "/" ? 1.0 : 0.8,
+      lastmod: new Date().toISOString(),
+    };
+  },
 };
+
