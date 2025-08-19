@@ -10,6 +10,7 @@ export default function Navbar({ lang = "en", labels }) {
   const searchParams = useSearchParams();
   const [open, setOpen] = useState(false);
 
+  //No need since react 19 already does this
   const currentParams = useMemo(() => {
     const params = new URLSearchParams(searchParams?.toString());
     return params;
@@ -18,7 +19,7 @@ export default function Navbar({ lang = "en", labels }) {
   const setLang = (nextLang) => {
     const params = new URLSearchParams(currentParams.toString());
     params.set("lang", nextLang);
-    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`);
+    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`,{scroll:false});
   };
 
   const isActive = (l) => lang === l;

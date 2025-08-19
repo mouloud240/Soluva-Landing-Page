@@ -166,6 +166,9 @@ const Contact = ({ t, handleSubmit }) => {
           </div>
         </div>
       </div>
+      <footer className="text-center mt-8">
+        <p className="text-muted text-sm">{t.copyright}</p>
+      </footer>
     </section>
   );
 };

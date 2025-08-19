@@ -138,6 +138,7 @@ export const dict = {
       message: "Tell us about your project...",
       send: "Send Message",
     },
+    copyright: "© 2025 Soluva. All rights reserved.",
   },
   fr: {
     social: {
@@ -282,6 +283,7 @@ export const dict = {
       message: "Parlez‑nous de votre projet...",
       send: "Envoyer le message",
     },
+    copyright: "© 2025 Soluva. Tous droits réservés.",
   },
   ar: {
     social: {
@@ -422,5 +424,6 @@ export const dict = {
       message: "أخبرنا عن مشروعك...",
       send: "إرسال الرسالة",
     },
+    copyright: "© 2025 Soluva. جميع الحقوق محفوظة.",
   },
 };
