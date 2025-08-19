@@ -25,7 +25,7 @@ export default function Navbar({ lang = "en", labels }) {
   const isActive = (l) => lang === l;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50">
+    <header className="fixed top-0 inset-x-0 z-50" style={{ transform: 'translateZ(0)' }}>
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="mt-4 rounded-2xl border border-[var(--border)] bg-[rgba(0,0,0,0.5)] backdrop-blur supports-[backdrop-filter]:bg-[rgba(0,0,0,0.4)]">
           <nav className="flex items-center justify-between px-4 py-3">
@@ -129,11 +129,11 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
           </button>
         </div>
         <div className="p-4 flex flex-col gap-4">
-          <a href="#services" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.services}</a>
-          <a href="#approach" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.approach}</a>
-          <a href="#cases" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.cases}</a>
-          <a href="#why" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.why}</a>
-          <a href="#contact" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.contact}</a>
+          <a href="#services" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.services}</a>
+          <a href="#approach" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.approach}</a>
+          <a href="#cases" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.cases}</a>
+          <a href="#why" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.why}</a>
+          <a href="#contact" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.contact}</a>
 
           <div className="mt-2 flex items-center gap-2 text-xs border border-[var(--border)] rounded-full px-1 py-1 bg-[rgba(255,255,255,0.02)] w-max">
             {[{ code: "en", label: "EN" }, { code: "fr", label: "FR" }, { code: "ar", label: "AR" }].map((l) => (
