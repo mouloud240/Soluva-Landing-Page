@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Cases = ({ t }) => {
+  const [visibleCases, setVisibleCases] = useState(3);
+
+  const handleViewMore = () => {
+    setVisibleCases(t.cases.length);
+  };
+
+  const handleViewLess = () => {
+    setVisibleCases(3);
+  };
+
   return (
     <section id="cases" className="relative py-14 md:py-20 gold-glow">
       <div className="mx-auto max-w-[1200px] container-padding">
@@ -16,7 +26,7 @@ const Cases = ({ t }) => {
           </a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {t.cases.map((c) => (
+          {t.cases.slice(0, visibleCases).map((c) => (
             <div key={c.title} className="card p-6 flex flex-col gap-3">
               <div className="h-36 rounded-lg bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.18),transparent_60%)] border border-[var(--border)]" />
               <div className="font-medium">{c.title}</div>
@@ -24,6 +34,17 @@ const Cases = ({ t }) => {
               <div className="text-sm text-muted">{c.detail}</div>
             </div>
           ))}
+        </div>
+        <div className="mt-6 text-center">
+          {visibleCases < t.cases.length ? (
+            <button onClick={handleViewMore} className="text-gold hover:underline">
+              View more
+            </button>
+          ) : (
+            <button onClick={handleViewLess} className="text-gold hover:underline">
+              View less
+            </button>
+          )}
         </div>
       </div>
     </section>
