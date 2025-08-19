@@ -44,11 +44,11 @@ const Cases = ({ t }) => {
         </div>
         <div className="mt-6 text-center">
           {visibleCases < t.cases.length ? (
-            <button onClick={handleViewMore} className="text-gold hover:underline">
+            <button onClick={handleViewMore} className="text-gold hover:underline btn-click-effect golden-glow">
               {t.viewMore}
             </button>
           ) : (
-            <button onClick={handleViewLess} className="text-gold hover:underline">
+            <button onClick={handleViewLess} className="text-gold hover:underline btn-click-effect golden-glow">
               {t.viewLess}
             </button>
           )}

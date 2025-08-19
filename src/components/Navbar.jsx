@@ -121,7 +121,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
           <button
             aria-label="Close menu"
             onClick={onClose}
-            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)]"
+            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)] btn-click-effect grey-glow"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -143,8 +143,8 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
                   setLang(l.code);
                   onClose();
                 }}
-                className={`px-2.5 py-1 rounded-full transition-colors ${
-                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold" : "text-muted hover:text-foreground"
+                className={`px-2.5 py-1 rounded-full transition-colors btn-click-effect ${
+                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold golden-glow" : "text-muted hover:text-foreground grey-glow"
                 }`}
                 aria-pressed={isActive(l.code)}
                 aria-label={`Switch language to ${l.label}`}
@@ -154,7 +154,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             ))}
           </div>
 
-          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2">
+          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect golden-glow">
             {labels.ctaQuote}
           </a>
         </div>

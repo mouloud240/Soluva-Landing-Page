@@ -314,3 +314,19 @@ body {
 .btn-send:hover {
   filter: brightness(1.05);
 }
+
+.btn-click-effect {
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn-click-effect:active {
+  transform: scale(0.95);
+}
+
+.btn-click-effect.golden-glow:active {
+  box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.3);
+}
+
+.btn-click-effect.grey-glow:active {
+  box-shadow: 0 0 15px 5px rgba(128, 128, 128, 0.3);
+}
