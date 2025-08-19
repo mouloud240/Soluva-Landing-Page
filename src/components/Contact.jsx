@@ -166,7 +166,7 @@ const Contact = ({ t, handleSubmit }) => {
           </div>
         </div>
       </div>
-      <footer className="text-center mt-8">
+      <footer className="text-center mt-30">
         <p className="text-muted text-sm">{t.copyright}</p>
       </footer>
     </section>

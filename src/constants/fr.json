@@ -59,42 +59,50 @@
     {
       "title": "IntelliPower",
       "stat": "Optimisation énergétique",
-      "detail": "Développement de services backend intelligents pour le suivi des performances, la fiabilité et la réduction des coûts."
+      "detail": "Développement de services backend intelligents pour le suivi des performances, la fiabilité et la réduction des coûts.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=IntelliPower"
     },
     {
       "title": "BSC Boumerdes",
       "stat": "Plateforme tourisme & hôtellerie",
-      "detail": "Plateforme pour la wilaya de Boumerdes afin de gérer les auberges et hôtels, tout en offrant aux visiteurs une application pour découvrir les meilleurs lieux de la région."
+      "detail": "Plateforme pour la wilaya de Boumerdes afin de gérer les auberges et hôtels, tout en offrant aux visiteurs une application pour découvrir les meilleurs lieux de la région.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=BSC+Boumerdes"
     },
     {
       "title": "Shop.co",
       "stat": "Plateforme e‑commerce mode",
-      "detail": "Boutique en ligne de vêtements offrant une expérience d’achat fluide avec gestion de catalogue, paiement optimisé et infrastructure scalable."
+      "detail": "Boutique en ligne de vêtements offrant une expérience d’achat fluide avec gestion de catalogue, paiement optimisé et infrastructure scalable.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Shop.co"
     },
     {
       "title": "TATWEER",
       "stat": "Plateforme de fret",
-      "detail": "Plateforme logistique et de fret digitalisée pour optimiser les opérations, améliorer l’efficacité et garantir la transparence du transport."
+      "detail": "Plateforme logistique et de fret digitalisée pour optimiser les opérations, améliorer l’efficacité et garantir la transparence du transport.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=TATWEER"
     },
     {
       "title": "GrowPath",
       "stat": "Découverte de stages étudiants",
-      "detail": "Plateforme qui connecte les étudiants à de réelles opportunités de stage, facilitant l’acquisition de compétences et le lancement de carrière."
+      "detail": "Plateforme qui connecte les étudiants à de réelles opportunités de stage, facilitant l’acquisition de compétences et le lancement de carrière.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=GrowPath"
     },
     {
       "title": "Suite Qurbani",
       "stat": "Transparence via IA",
-      "detail": "Solution complète (mobile, backend, dashboard) avec validation vidéo par IA, suivi des dons et transparence pour les ONG."
+      "detail": "Solution complète (mobile, backend, dashboard) avec validation vidéo par IA, suivi des dons et transparence pour les ONG.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Qurbani"
     },
     {
       "title": "Plateforme PTU Learning",
       "stat": "Éducation numérique interactive",
-      "detail": "Plateforme e-learning personnalisée avec gestion des cours, engagement des étudiants et distribution de contenu scalable."
+      "detail": "Plateforme e-learning personnalisée avec gestion des cours, engagement des étudiants et distribution de contenu scalable.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=PTU+Platform"
     },
     {
       "title": "EventHub",
       "stat": "100k+ événements gérés",
-      "detail": "Plateforme de gestion d’événements en NestJS + PostgreSQL avec notifications, RSVP et mises à jour temps réel."
+      "detail": "Plateforme de gestion d’événements en NestJS + PostgreSQL avec notifications, RSVP et mises à jour temps réel.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=EventHub"
     }
   ],
   "whyTiles": [
@@ -128,5 +136,7 @@
     "message": "Parlez‑nous de votre projet...",
     "send": "Envoyer le message"
   },
-  "copyright": "© 2025 Soluva. Tous droits réservés."
+  "copyright": "© 2025 Soluva. Tous droits réservés.",
+  "viewMore": "Voir plus",
+  "viewLess": "Voir moins"
 }

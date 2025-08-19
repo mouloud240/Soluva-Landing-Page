@@ -60,42 +60,50 @@
     {
       "title": "IntelliPower",
       "stat": "Optimized energy operations",
-      "detail": "Developed smart backend services for performance monitoring, reliability, and cost reduction in energy systems."
+      "detail": "Developed smart backend services for performance monitoring, reliability, and cost reduction in energy systems.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=IntelliPower"
     },
     {
       "title": "BSC Boumerdes",
       "stat": "Tourism & hospitality platform",
-      "detail": "A platform for the Wilaya of Boumerdes to manage haubergs and hotels, while offering visitors an app to discover the best attractions and places in the region."
+      "detail": "A platform for the Wilaya of Boumerdes to manage haubergs and hotels, while offering visitors an app to discover the best attractions and places in the region.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=BSC+Boumerdes"
     },
     {
       "title": "Shop.co",
       "stat": "E-commerce fashion platform",
-      "detail": "Online clothing store providing a seamless shopping experience with optimized checkout, catalog management, and scalable infrastructure."
+      "detail": "Online clothing store providing a seamless shopping experience with optimized checkout, catalog management, and scalable infrastructure.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Shop.co"
     },
     {
       "title": "TATWEER",
       "stat": "Freighting platform",
-      "detail": "Built a modern logistics and freighting platform to digitize operations, improve efficiency, and enable transparent transport management."
+      "detail": "Built a modern logistics and freighting platform to digitize operations, improve efficiency, and enable transparent transport management.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=TATWEER"
     },
     {
       "title": "GrowPath",
       "stat": "Internship discovery for students",
-      "detail": "Platform connecting students with real internship opportunities, helping them grow skills and start careers faster."
+      "detail": "Platform connecting students with real internship opportunities, helping them grow skills and start careers faster.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=GrowPath"
     },
     {
       "title": "Qurbani Management Suite",
       "stat": "AI-powered transparency",
-      "detail": "End-to-end solution (mobile, backend, dashboard) with AI video validation, donation tracking, and NGO transparency."
+      "detail": "End-to-end solution (mobile, backend, dashboard) with AI video validation, donation tracking, and NGO transparency.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Qurbani"
     },
     {
       "title": "PTU Learning Platform",
       "stat": "Interactive digital education",
-      "detail": "Custom e-learning platform supporting courses, student engagement, and scalable content delivery."
+      "detail": "Custom e-learning platform supporting courses, student engagement, and scalable content delivery.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=PTU+Platform"
     },
     {
       "title": "EventHub",
       "stat": "100k+ events processed",
-      "detail": "Lightweight event management platform with NestJS + PostgreSQL, email notifications, RSVPs, and real-time updates."
+      "detail": "Lightweight event management platform with NestJS + PostgreSQL, email notifications, RSVPs, and real-time updates.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=EventHub"
     }
   ],
   "whyTiles": [
@@ -126,5 +134,7 @@
     "message": "Tell us about your project...",
     "send": "Send Message"
   },
-  "copyright": "© 2025 Soluva. All rights reserved."
+  "copyright": "© 2025 Soluva. All rights reserved.",
+  "viewMore": "View more",
+  "viewLess": "View less"
 }

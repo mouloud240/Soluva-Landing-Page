@@ -1,4 +1,7 @@
 import React from 'react';
+import { Database, AppWindow, Cloud, Palette } from 'lucide-react';
+
+const icons = [<Database />, <AppWindow />, <Cloud />, <Palette />];
 
 const Services = ({ t }) => {
   return (
@@ -12,13 +15,15 @@ const Services = ({ t }) => {
               style={{ animationDelay: `${120 + i * 80}ms` }}
             >
               <div
-                className="h-10 w-10 rounded-lg"
+                className="h-10 w-10 rounded-lg flex items-center justify-center text-gold"
                 style={{
                   background:
                     "linear-gradient(180deg, rgba(212,175,55,0.35), rgba(212,175,55,0.05))",
                   border: "1px solid var(--border)",
                 }}
-              />
+              >
+                {icons[i]}
+              </div>
               <h3 className="heading-lg text-xl font-semibold">{s.title}</h3>
               <p className="text-sm text-muted">{s.desc}</p>
               {/* <p className="text-xs text-muted/80">{s.tech}</p> */}
