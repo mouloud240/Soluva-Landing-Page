@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import { dict } from "@/constants";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Approach from "@/components/Approach";
@@ -12,6 +11,7 @@ import Notification from "@/components/notification";
 
 export default function Home({ searchParams }) {
   const [notification, setNotification] = useState({ message: "", type: "" });
+  const [t, setT] = useState(null);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -53,10 +53,22 @@ export default function Home({ searchParams }) {
     setNotification({ message: "", type: "" });
   };
 
-  const rawLang = searchParams?.lang || "en";
+  const searchParamsParsed=React.use(searchParams);
+  const rawLang = searchParamsParsed.lang || "en";
   const lang = ["en", "fr", "ar"].includes(rawLang) ? rawLang : "en";
-  const t = dict[lang];
   const dir = lang === "ar" ? "rtl" : "ltr";
+
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      const translations = await import(`@/constants/${lang}.json`);
+      setT(translations.default);
+    };
+    fetchTranslations();
+  }, [lang]);
+
+  if (!t) {
+    return null;
+  }
 
   return (
     <div className="font-sans" dir={dir}>

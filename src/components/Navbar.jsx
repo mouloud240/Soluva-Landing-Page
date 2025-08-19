@@ -19,7 +19,7 @@ export default function Navbar({ lang = "en", labels }) {
   const setLang = (nextLang) => {
     const params = new URLSearchParams(currentParams.toString());
     params.set("lang", nextLang);
-    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`,{scroll:false});
+    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`, { scroll: false });
   };
 
   const isActive = (l) => lang === l;

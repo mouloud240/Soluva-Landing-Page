@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = ({ t }) => {
+const Hero = React.memo(({ t }) => {
   return (
     <section
       id="hero"
@@ -53,6 +53,6 @@ const Hero = ({ t }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

@@ -1,0 +1,130 @@
+
+{
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/108645820/admin/dashboard/",
+    "instagram": "https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr"
+  },
+  "eyebrow": "Engineering Excellence. Business Results.",
+  "heroPre": "Transforming Businesses with ",
+  "heroEm": "Scalable Software",
+  "heroPost": " That Delivers Results.",
+  "heroSubtitle": "Not just code — we engineer growth, efficiency, and long‑term competitive advantage.",
+  "primaryCta": "Book a Free Strategy Call",
+  "secondaryCta": "Let’s Build Your Advantage",
+  "nav": {
+    "services": "Services",
+    "approach": "Approach",
+    "cases": "Case Studies",
+    "why": "Why Us",
+    "contact": "Contact"
+  },
+  "ctaQuote": "Get a quote",
+  "success": "Success Stories",
+  "getQuote": "Get a custom quote in 24h →",
+  "whyTitle": "Why Partner With Us",
+  "whyDesc": "Business‑first mindset. End‑to‑end delivery. Transparent pricing. Bilingual support (FR/EN/AR).",
+  "lead": {
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "submit": "Get Quote →"
+  },
+  "approachParagraph": "We don’t just deliver features — we deliver measurable outcomes: faster time‑to‑market, reduced operational costs, and scalable foundations.",
+  "services": [
+    {
+      "title": "Backend Engineering",
+      "desc": "Future-proof, high-performance systems to cut downtime, reduce costs, and support scale."
+    },
+    {
+      "title": "Frontend",
+      "desc": "Seamless web & mobile experiences that boost engagement and conversions."
+    },
+    {
+      "title": "System Design & Cloud",
+      "desc": "Secure, reliable infrastructure that reduces risk and accelerates growth."
+    },
+    {
+      "title": "UI/UX",
+      "desc": "Interfaces that delight users and increase retention."
+    }
+  ],
+  "approachHeading": "Business‑Driven Engineering",
+  "approachSteps": [
+    "Discovery",
+    "Strategy",
+    "Agile Build",
+    "Launch",
+    "Scale & Support"
+  ],
+  "cases": [
+    {
+      "title": "IntelliPower",
+      "stat": "Optimized energy operations",
+      "detail": "Developed smart backend services for performance monitoring, reliability, and cost reduction in energy systems."
+    },
+    {
+      "title": "BSC Boumerdes",
+      "stat": "Tourism & hospitality platform",
+      "detail": "A platform for the Wilaya of Boumerdes to manage haubergs and hotels, while offering visitors an app to discover the best attractions and places in the region."
+    },
+    {
+      "title": "Shop.co",
+      "stat": "E-commerce fashion platform",
+      "detail": "Online clothing store providing a seamless shopping experience with optimized checkout, catalog management, and scalable infrastructure."
+    },
+    {
+      "title": "TATWEER",
+      "stat": "Freighting platform",
+      "detail": "Built a modern logistics and freighting platform to digitize operations, improve efficiency, and enable transparent transport management."
+    },
+    {
+      "title": "GrowPath",
+      "stat": "Internship discovery for students",
+      "detail": "Platform connecting students with real internship opportunities, helping them grow skills and start careers faster."
+    },
+    {
+      "title": "Qurbani Management Suite",
+      "stat": "AI-powered transparency",
+      "detail": "End-to-end solution (mobile, backend, dashboard) with AI video validation, donation tracking, and NGO transparency."
+    },
+    {
+      "title": "PTU Learning Platform",
+      "stat": "Interactive digital education",
+      "detail": "Custom e-learning platform supporting courses, student engagement, and scalable content delivery."
+    },
+    {
+      "title": "EventHub",
+      "stat": "100k+ events processed",
+      "detail": "Lightweight event management platform with NestJS + PostgreSQL, email notifications, RSVPs, and real-time updates."
+    }
+  ],
+  "whyTiles": [
+    { "k": "Business‑first", "v": "Outcomes over output: ROI, savings, growth." },
+    { "k": "End‑to‑end", "v": "Design → deployment → maintenance." },
+    { "k": "Transparent", "v": "Clear pricing, flexible engagement models." },
+    { "k": "Bilingual", "v": "French, English, Arabic." }
+  ],
+  "finalHeading": "Engineering Excellence. Business Results.",
+  "finalSubtext": "Book your free consultation or get a custom quote in 24h.",
+  "finalBookCta": "Book Your Free Consultation",
+  "whatsappLabel": "WhatsApp",
+  "callLabel": "Call Us",
+  "contact": {
+    "title": "Let’s Build Something Great",
+    "intro": "Tell us about your project. Whether you need a new product, architecture review, or performance optimization, we can help.",
+    "name": "Your name",
+    "email": "Your email",
+    "subject": "Subject",
+    "selectTopic": "Select a topic",
+    "topics": [
+      "New project",
+      "Architecture & scaling",
+      "Performance optimization",
+      "UI/UX & product design",
+      "Cloud & DevOps"
+    ],
+    "message": "Tell us about your project...",
+    "send": "Send Message"
+  },
+  "copyright": "© 2025 Soluva. All rights reserved."
+}
