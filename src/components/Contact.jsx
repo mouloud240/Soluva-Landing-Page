@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Contact = ({ t, handleSubmit }) => {
   return (
@@ -24,39 +24,52 @@ const Contact = ({ t, handleSubmit }) => {
                 </div>
               </div>
               <div>
-                <div className="form-label">GitHub</div>
+                <div className="form-label">Instagram</div>
                 <div className="flex items-center gap-3 text-muted">
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[rgba(255,255,255,0.04)] border border-[var(--border)]">
-                    GH
-                  </span>
-                  <span>mouloud240</span>
+                  <a
+                    href="https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[rgba(255,255,255,0.04)] border border-[var(--border)]"
+                  >
+                    IG
+                  </a>
+                  <span>soluva.dev</span>
                 </div>
               </div>
               <div>
                 <div className="form-label">LinkedIn</div>
                 <div className="flex items-center gap-3 text-muted">
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[rgba(255,255,255,0.04)] border border-[var(--border)]">
+                  <a
+                    href="https://www.linkedin.com/company/108645820/admin/dashboard/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[rgba(255,255,255,0.04)] border border-[var(--border)]"
+                  >
                     in
-                  </span>
-                  <span>Mouloud Hasrane</span>
+                  </a>
+                  <span>Soluva</span>
                 </div>
               </div>
 
               <div className="mt-4 border-t border-[var(--border)] pt-4">
-                <div className="form-label">What I can help with</div>
+                <div className="form-label">How we can help</div>
                 <ul className="text-sm text-muted space-y-2.5">
-                  <li>System architecture design & review</li>
-                  <li>API development with NestJS & TypeScript</li>
-                  <li>Performance optimization & scaling</li>
-                  <li>Database design & optimization</li>
-                  <li>Cloud & DevOps setup</li>
+                  <li>Enterprise System Architecture</li>
+                  <li>Scalable API Development</li>
+                  <li>Performance & Scalability Consulting</li>
+                  <li>Database Architecture & Optimization</li>
+                  <li>Cloud & DevOps Transformation</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div className="card p-6 md:p-8">
-            <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5" onSubmit={handleSubmit}>
+            <form
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5"
+              onSubmit={handleSubmit}
+            >
               <div className="sm:col-span-1">
                 <label className="form-label" htmlFor="name">
                   Name
@@ -86,7 +99,12 @@ const Contact = ({ t, handleSubmit }) => {
                 <label className="form-label" htmlFor="subject">
                   {t.contact.subject}
                 </label>
-                <select id="subject" name="subject" className="form-control" required>
+                <select
+                  id="subject"
+                  name="subject"
+                  className="form-control"
+                  required
+                >
                   <option>{t.contact.selectTopic}</option>
                   {t.contact.topics.map((topic) => (
                     <option key={topic}>{topic}</option>
@@ -120,10 +138,7 @@ const Contact = ({ t, handleSubmit }) => {
                     {t.callLabel}
                   </a>
                 </div>
-                <button
-                  type="submit"
-                  className="btn-send w-full"
-                >
+                <button type="submit" className="btn-send w-full">
                   <svg
                     width="16"
                     height="16"

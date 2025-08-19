@@ -1,23 +1,22 @@
-'use client';
-import { useState } from 'react';
-import Navbar from '../components/Navbar.jsx';
-import { dict } from '@/constants';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import Approach from '@/components/Approach';
-import Cases from '@/components/Cases';
-import Why from '@/components/Why';
-import Contact from '@/components/Contact';
-import Notification from '@/components/notification';
+"use client";
+import { useState } from "react";
+import Navbar from "../components/Navbar.jsx";
+import { dict } from "@/constants";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Approach from "@/components/Approach";
+import Cases from "@/components/Cases";
+import Why from "@/components/Why";
+import Contact from "@/components/Contact";
+import Notification from "@/components/notification";
 
 export default function Home({ searchParams }) {
-  const [notification, setNotification] = useState({ message: '', type: '' });
+  const [notification, setNotification] = useState({ message: "", type: "" });
 
-  // Web3Forms handler
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append("access_key", '040e97fe-4e5b-4393-bf18-fdf5a1baa2a7');
+    formData.append("access_key", "040e97fe-4e5b-4393-bf18-fdf5a1baa2a7");
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
     try {
@@ -25,25 +24,33 @@ export default function Home({ searchParams }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': '*',
-          Accept: "application/json"
+          Accept: "application/json",
         },
-        body: json
+        body: json,
       });
       const result = await response.json();
       if (result.success) {
-        setNotification({ message: 'Message sent successfully!', type: 'success' });
+        setNotification({
+          message: "Message sent successfully!",
+          type: "success",
+        });
         event.target.reset();
       } else {
-        setNotification({ message: 'Failed to send message. Please try again.', type: 'error' });
+        setNotification({
+          message: "Failed to send message. Please try again.",
+          type: "error",
+        });
       }
     } catch (err) {
-      setNotification({ message: 'An error occurred. Please try again later.', type: 'error' });
+      setNotification({
+        message: "An error occurred. Please try again later.",
+        type: "error",
+      });
     }
   }
 
   const handleCloseNotification = () => {
-    setNotification({ message: '', type: '' });
+    setNotification({ message: "", type: "" });
   };
 
   const rawLang = searchParams?.lang || "en";
@@ -60,7 +67,10 @@ export default function Home({ searchParams }) {
           onClose={handleCloseNotification}
         />
       )}
-      <Navbar lang={lang} labels={{ nav: t.nav, ctaQuote: t.ctaQuote }} />
+      <Navbar
+        lang={lang}
+        labels={{ nav: t.nav, ctaQuote: t.ctaQuote, social: t.social }}
+      />
       <Hero t={t} />
       <Services t={t} />
       <Approach t={t} />

@@ -1,5 +1,9 @@
 export const dict = {
   en: {
+    social: {
+      linkedin: "https://www.linkedin.com/company/108645820/admin/dashboard/",
+      instagram: "https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr",
+    },
     eyebrow: "Engineering Excellence. Business Results.",
     heroPre: "Transforming Businesses with ",
     heroEm: "Scalable Software",
@@ -136,6 +140,10 @@ export const dict = {
     },
   },
   fr: {
+    social: {
+      linkedin: "https://www.linkedin.com/company/108645820/admin/dashboard/",
+      instagram: "https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr",
+    },
     eyebrow: "Excellence d’ingénierie. Résultats business.",
     heroPre: "Transformer les entreprises avec ",
     heroEm: "des logiciels scalables",
@@ -276,6 +284,10 @@ export const dict = {
     },
   },
   ar: {
+    social: {
+      linkedin: "https://www.linkedin.com/company/108645820/admin/dashboard/",
+      instagram: "https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr",
+    },
     eyebrow: "هندسة فائقة. نتائج أعمال.",
     heroPre: "نحوّل الأعمال ب",
     heroEm: "برمجيات قابلة للتوسع",
