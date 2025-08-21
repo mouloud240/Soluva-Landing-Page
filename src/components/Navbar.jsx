@@ -25,7 +25,7 @@ export default function Navbar({ lang = "en", labels }) {
   const isActive = (l) => lang === l;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50" style={{ transform: 'translateZ(0)' }}>
+    <header className="fixed top-0 inset-x-0 z-50 h-max" style={{ transform: 'translateZ(0)' }}>
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="mt-4 rounded-2xl border border-[var(--border)] bg-[rgba(0,0,0,0.5)] backdrop-blur supports-[backdrop-filter]:bg-[rgba(0,0,0,0.4)]">
           <nav className="flex items-center justify-between px-4 py-3">
