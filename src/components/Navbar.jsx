@@ -122,7 +122,6 @@ export default function Navbar({ lang = "en", labels }) {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
       <MobileDrawer
         open={open}
         onClose={() => setOpen(false)}
@@ -150,18 +149,18 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
       className={`fixed inset-0 z-[60] transition-opacity ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       aria-hidden={!open}
     >
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+      <div className="absolute inset-0 bg-black" onClick={onClose} />
       <aside
-        className={`absolute right-0 top-0 h-full w-[85%] max-w-[360px] bg-[var(--surface)] border-l border-[var(--border)] shadow-xl transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`absolute right-0 top-0 h-full w-[85%] max-w-[360px] bg-black border-l border-black shadow-xl transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
         role="dialog"
         aria-modal="true"
       >
-        <div className="p-4 flex items-center justify-between border-b border-[var(--border)]">
-          <span className="font-semibold">Menu</span>
+        <div className="p-4 flex items-center justify-between border-b border-black bg-black">
+          <span className="font-semibold text-white">Menu</span>
           <button
             aria-label="Close menu"
             onClick={onClose}
-            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)] btn-click-effect grey-glow"
+            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-black bg-black btn-click-effect"
           >
             <svg
               width="18"
@@ -172,21 +171,21 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             >
               <path
                 d="M6 6l12 12M18 6L6 18"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="1.5"
                 strokeLinecap="round"
               />
             </svg>
           </button>
         </div>
-        <div className="p-4 flex flex-col gap-4">
-          <a href="#services" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.services}</a>
-          <a href="#approach" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.approach}</a>
-          <a href="#cases" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.cases}</a>
-          <a href="#why" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.why}</a>
-          <a href="#contact" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.contact}</a>
+        <div className="p-4 flex flex-col gap-4 bg-black">
+          <a href="#services" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.services}</a>
+          <a href="#approach" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.approach}</a>
+          <a href="#cases" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.cases}</a>
+          <a href="#why" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.why}</a>
+          <a href="#contact" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.contact}</a>
 
-          <div className="mt-2 flex items-center gap-2 text-xs border border-[var(--border)] rounded-full px-1 py-1 bg-[rgba(255,255,255,0.02)] w-max">
+          <div className="mt-2 flex items-center gap-2 text-xs border border-black rounded-full px-1 py-1 bg-black w-max">
             {[
               { code: "en", label: "EN" },
               { code: "fr", label: "FR" },
@@ -199,7 +198,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
                   onClose();
                 }}
                 className={`px-2.5 py-1 rounded-full transition-colors btn-click-effect ${
-                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold golden-glow" : "text-muted hover:text-foreground grey-glow"
+                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold" : "text-white hover:text-gold"
                 }`}
                 aria-pressed={isActive(l.code)}
                 aria-label={`Switch language to ${l.label}`}
@@ -209,7 +208,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             ))}
           </div>
 
-          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect golden-glow">
+          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect" style={{ backgroundColor: "#000", color: "#fff", border: "1px solid #000" }}>
             {labels.ctaQuote}
           </a>
         </div>
