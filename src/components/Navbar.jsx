@@ -18,7 +18,9 @@ export default function Navbar({ lang = "en", labels }) {
   const setLang = (nextLang) => {
     const params = new URLSearchParams(currentParams.toString());
     params.set("lang", nextLang);
-    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`);
+    router.push(
+      `${pathname}?${params.toString()}${window.location.hash || ""}`,
+    );
   };
 
   const isActive = (l) => lang === l;
@@ -29,19 +31,48 @@ export default function Navbar({ lang = "en", labels }) {
         <div className="mt-4 rounded-2xl border border-[var(--border)] bg-[rgba(0,0,0,0.5)] backdrop-blur supports-[backdrop-filter]:bg-[rgba(0,0,0,0.4)]">
           <nav className="flex items-center justify-between px-4 py-3">
             <div className="flex items-center gap-4 md:gap-8">
-    <Image src={'/logo.png'} priority width={40} height={0} alt="Logo" className="w-{40px} h-{40px}"/ >
+              <Image
+                src={"/logo.png"}
+                priority
+                width={40}
+                height={0}
+                alt="Logo"
+                className="w-{40px} h-{40px}"
+              />
 
-
-                          <ul className="hidden md:flex items-center gap-6 text-sm text-muted">
-                <li><a className="hover:text-gold" href="#services">{labels.nav.services}</a></li>
-                <li><a className="hover:text-gold" href="#approach">{labels.nav.approach}</a></li>
-                <li><a className="hover:text-gold" href="#cases">{labels.nav.cases}</a></li>
-                <li><a className="hover:text-gold" href="#why">{labels.nav.why}</a></li>
-                <li><a className="hover:text-gold" href="#contact">{labels.nav.contact}</a></li>
+              <ul className="hidden md:flex items-center gap-6 text-sm text-muted">
+                <li>
+                  <a className="hover:text-gold" href="#services">
+                    {labels.nav.services}
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-gold" href="#approach">
+                    {labels.nav.approach}
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-gold" href="#cases">
+                    {labels.nav.cases}
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-gold" href="#why">
+                    {labels.nav.why}
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-gold" href="#contact">
+                    {labels.nav.contact}
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="flex items-center gap-2 md:gap-3">
-              <a href="#contact" className="hidden sm:inline-flex cta-primary h-10 px-4 text-sm font-medium items-center justify-center">
+              <a
+                href="#contact"
+                className="hidden sm:inline-flex cta-primary h-10 px-4 text-sm font-medium items-center justify-center"
+              >
                 {labels.ctaQuote}
               </a>
               <button
@@ -51,8 +82,19 @@ export default function Navbar({ lang = "en", labels }) {
                 onClick={() => setOpen(true)}
               >
                 <span className="sr-only">Open menu</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 7h16M4 12h16M4 17h16"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </button>
               <div className="hidden md:flex items-center gap-1 text-xs border border-[var(--border)] rounded-full px-1 py-1 bg-[rgba(255,255,255,0.02)]">
@@ -122,20 +164,65 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             onClick={onClose}
             className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)]"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6l12 12M18 6L6 18"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
             </svg>
           </button>
         </div>
         <div className="p-4 flex flex-col gap-4">
-          <a href="#services" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.services}</a>
-          <a href="#approach" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.approach}</a>
-          <a href="#cases" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.cases}</a>
-          <a href="#why" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.why}</a>
-          <a href="#contact" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold">{labels.nav.contact}</a>
+          <a
+            href="#services"
+            onClick={onClose}
+            className="py-2 text-foreground/90 hover:text-gold"
+          >
+            {labels.nav.services}
+          </a>
+          <a
+            href="#approach"
+            onClick={onClose}
+            className="py-2 text-foreground/90 hover:text-gold"
+          >
+            {labels.nav.approach}
+          </a>
+          <a
+            href="#cases"
+            onClick={onClose}
+            className="py-2 text-foreground/90 hover:text-gold"
+          >
+            {labels.nav.cases}
+          </a>
+          <a
+            href="#why"
+            onClick={onClose}
+            className="py-2 text-foreground/90 hover:text-gold"
+          >
+            {labels.nav.why}
+          </a>
+          <a
+            href="#contact"
+            onClick={onClose}
+            className="py-2 text-foreground/90 hover:text-gold"
+          >
+            {labels.nav.contact}
+          </a>
 
           <div className="mt-2 flex items-center gap-2 text-xs border border-[var(--border)] rounded-full px-1 py-1 bg-[rgba(255,255,255,0.02)] w-max">
-            {[{ code: "en", label: "EN" }, { code: "fr", label: "FR" }, { code: "ar", label: "AR" }].map((l) => (
+            {[
+              { code: "en", label: "EN" },
+              { code: "fr", label: "FR" },
+              { code: "ar", label: "AR" },
+            ].map((l) => (
               <button
                 key={l.code}
                 onClick={() => {
@@ -143,7 +230,9 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
                   onClose();
                 }}
                 className={`px-2.5 py-1 rounded-full transition-colors ${
-                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold" : "text-muted hover:text-foreground"
+                  isActive(l.code)
+                    ? "bg-[rgba(212,175,55,0.2)] text-gold"
+                    : "text-muted hover:text-foreground"
                 }`}
                 aria-pressed={isActive(l.code)}
                 aria-label={`Switch language to ${l.label}`}
@@ -153,7 +242,11 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             ))}
           </div>
 
-          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2">
+          <a
+            href="#contact"
+            onClick={onClose}
+            className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2"
+          >
             {labels.ctaQuote}
           </a>
         </div>
@@ -161,4 +254,3 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
     </div>
   );
 }
-
