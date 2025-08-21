@@ -1,0 +1,142 @@
+{
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/108645820/admin/dashboard/",
+    "instagram": "https://www.instagram.com/soluva.dev?igsh=MTlzd2JjYXYzcDZseg%3D%3D&utm_source=qr"
+  },
+  "eyebrow": "Excellence d’ingénierie. Résultats business.",
+  "heroPre": "Transformer les entreprises avec ",
+  "heroEm": "des logiciels scalables",
+  "heroPost": " orientés résultats.",
+  "heroSubtitle": "Pas seulement du code — nous concevons la croissance, l’efficacité et un avantage concurrentiel durable.",
+  "primaryCta": "Réserver un appel stratégique gratuit",
+  "secondaryCta": "Construisons votre avantage",
+  "nav": {
+    "services": "Services",
+    "approach": "Approche",
+    "cases": "Études de cas",
+    "why": "Pourquoi nous",
+    "contact": "Contact"
+  },
+  "ctaQuote": "Demander un devis",
+  "success": "Succès clients",
+  "getQuote": "Obtenir un devis en 24h →",
+  "whyTitle": "Pourquoi collaborer avec nous",
+  "whyDesc": "Esprit business‑first. Delivery bout‑à‑bout. Tarifs transparents. Support bilingue (FR/EN/AR).",
+  "lead": {
+    "name": "Nom",
+    "email": "Email",
+    "company": "Entreprise",
+    "submit": "Obtenir un devis →"
+  },
+  "approachParagraph": "Nous ne livrons pas seulement des fonctionnalités — nous livrons des résultats mesurables : un time‑to‑market plus rapide, des coûts opérationnels réduits et des fondations scalables.",
+  "services": [
+    {
+      "title": "Ingénierie Backend",
+      "desc": "Systèmes performants et pérennes pour réduire les coûts, la panne et soutenir la croissance."
+    },
+    {
+      "title": "Frontend",
+      "desc": "Expériences web & mobile fluides qui augmentent l’engagement et les conversions."
+    },
+    {
+      "title": "Architecture Système & Cloud",
+      "desc": "Infrastructure sécurisée et fiable qui réduit les risques et accélère la croissance."
+    },
+    {
+      "title": "UI/UX",
+      "desc": "Interfaces qui enchantent les utilisateurs et augmentent la rétention."
+    }
+  ],
+  "approachHeading": "Ingénierie orientée business",
+  "approachSteps": [
+    "Découverte",
+    "Stratégie",
+    "Construction agile",
+    "Lancement",
+    "Échelle & Support"
+  ],
+  "cases": [
+    {
+      "title": "IntelliPower",
+      "stat": "Optimisation énergétique",
+      "detail": "Développement de services backend intelligents pour le suivi des performances, la fiabilité et la réduction des coûts.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=IntelliPower"
+    },
+    {
+      "title": "BSC Boumerdes",
+      "stat": "Plateforme tourisme & hôtellerie",
+      "detail": "Plateforme pour la wilaya de Boumerdes afin de gérer les auberges et hôtels, tout en offrant aux visiteurs une application pour découvrir les meilleurs lieux de la région.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=BSC+Boumerdes"
+    },
+    {
+      "title": "Shop.co",
+      "stat": "Plateforme e‑commerce mode",
+      "detail": "Boutique en ligne de vêtements offrant une expérience d’achat fluide avec gestion de catalogue, paiement optimisé et infrastructure scalable.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Shop.co"
+    },
+    {
+      "title": "TATWEER",
+      "stat": "Plateforme de fret",
+      "detail": "Plateforme logistique et de fret digitalisée pour optimiser les opérations, améliorer l’efficacité et garantir la transparence du transport.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=TATWEER"
+    },
+    {
+      "title": "GrowPath",
+      "stat": "Découverte de stages étudiants",
+      "detail": "Plateforme qui connecte les étudiants à de réelles opportunités de stage, facilitant l’acquisition de compétences et le lancement de carrière.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=GrowPath"
+    },
+    {
+      "title": "Suite Qurbani",
+      "stat": "Transparence via IA",
+      "detail": "Solution complète (mobile, backend, dashboard) avec validation vidéo par IA, suivi des dons et transparence pour les ONG.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=Qurbani"
+    },
+    {
+      "title": "Plateforme PTU Learning",
+      "stat": "Éducation numérique interactive",
+      "detail": "Plateforme e-learning personnalisée avec gestion des cours, engagement des étudiants et distribution de contenu scalable.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=PTU+Platform"
+    },
+    {
+      "title": "EventHub",
+      "stat": "100k+ événements gérés",
+      "detail": "Plateforme de gestion d’événements en NestJS + PostgreSQL avec notifications, RSVP et mises à jour temps réel.",
+      "image": "https://placehold.co/600x400/d4af37/000000?text=EventHub"
+    }
+  ],
+  "whyTiles": [
+    {
+      "k": "Business‑first",
+      "v": "Des résultats avant tout: ROI, économies, croissance."
+    },
+    { "k": "De bout‑en‑bout", "v": "Design → déploiement → maintenance." },
+    { "k": "Transparent", "v": "Tarification claire, modèles flexibles." },
+    { "k": "Bilingue", "v": "Français, Anglais, Arabe." }
+  ],
+  "finalHeading": "Excellence d’ingénierie. Résultats business.",
+  "finalSubtext": "Réservez une consultation gratuite ou obtenez un devis en 24h.",
+  "finalBookCta": "Réserver une consultation gratuite",
+  "whatsappLabel": "WhatsApp",
+  "callLabel": "Appelez‑nous",
+  "contact": {
+    "title": "Construisons quelque chose d’extraordinaire",
+    "intro": "Parlez‑nous de votre projet. Nouveau produit, revue d’architecture ou optimisation des performances : nous pouvons aider.",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "subject": "Sujet",
+    "selectTopic": "Choisir un sujet",
+    "topics": [
+      "Nouveau projet",
+      "Architecture & montée en charge",
+      "Optimisation des performances",
+      "UI/UX & conception produit",
+      "Cloud & DevOps"
+    ],
+    "message": "Parlez‑nous de votre projet...",
+    "send": "Envoyer le message"
+  },
+  "copyright": "© 2025 Soluva. Tous droits réservés.",
+  "viewMore": "Voir plus",
+  "viewLess": "Voir moins"
+}

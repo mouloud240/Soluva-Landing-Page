@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = ({ t }) => {
+const Hero = React.memo(({ t }) => {
   return (
     <section
       id="hero"
@@ -37,13 +37,13 @@ const Hero = ({ t }) => {
             >
               <a
                 href="#contact"
-                className="cta-primary h-12 px-6 inline-flex items-center justify-center text-sm font-medium"
+                className="cta-primary h-12 px-6 inline-flex items-center justify-center text-sm font-medium btn-click-effect golden-glow"
               >
                 {t.primaryCta}
               </a>
               <a
                 href="#contact"
-                className="cta-secondary h-12 px-6 inline-flex items-center justify-center text-sm font-medium text-foreground"
+                className="cta-secondary h-12 px-6 inline-flex items-center justify-center text-sm font-medium text-foreground btn-click-effect grey-glow"
               >
                 {t.secondaryCta}
               </a>
@@ -53,6 +53,6 @@ const Hero = ({ t }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

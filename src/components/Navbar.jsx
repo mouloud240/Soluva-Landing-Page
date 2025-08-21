@@ -10,6 +10,7 @@ export default function Navbar({ lang = "en", labels }) {
   const searchParams = useSearchParams();
   const [open, setOpen] = useState(false);
 
+  //No need since react 19 already does this
   const currentParams = useMemo(() => {
     const params = new URLSearchParams(searchParams?.toString());
     return params;
@@ -18,15 +19,13 @@ export default function Navbar({ lang = "en", labels }) {
   const setLang = (nextLang) => {
     const params = new URLSearchParams(currentParams.toString());
     params.set("lang", nextLang);
-    router.push(
-      `${pathname}?${params.toString()}${window.location.hash || ""}`,
-    );
+    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`, { scroll: false });
   };
 
   const isActive = (l) => lang === l;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50">
+    <header className="fixed top-0 inset-x-0 z-50" style={{ transform: 'translateZ(0)' }}>
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="mt-4 rounded-2xl border border-[var(--border)] bg-[rgba(0,0,0,0.5)] backdrop-blur supports-[backdrop-filter]:bg-[rgba(0,0,0,0.4)]">
           <nav className="flex items-center justify-between px-4 py-3">
@@ -162,7 +161,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
           <button
             aria-label="Close menu"
             onClick={onClose}
-            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)]"
+            className="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[var(--border)] bg-[rgba(255,255,255,0.02)] btn-click-effect grey-glow"
           >
             <svg
               width="18"
@@ -181,41 +180,11 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
           </button>
         </div>
         <div className="p-4 flex flex-col gap-4">
-          <a
-            href="#services"
-            onClick={onClose}
-            className="py-2 text-foreground/90 hover:text-gold"
-          >
-            {labels.nav.services}
-          </a>
-          <a
-            href="#approach"
-            onClick={onClose}
-            className="py-2 text-foreground/90 hover:text-gold"
-          >
-            {labels.nav.approach}
-          </a>
-          <a
-            href="#cases"
-            onClick={onClose}
-            className="py-2 text-foreground/90 hover:text-gold"
-          >
-            {labels.nav.cases}
-          </a>
-          <a
-            href="#why"
-            onClick={onClose}
-            className="py-2 text-foreground/90 hover:text-gold"
-          >
-            {labels.nav.why}
-          </a>
-          <a
-            href="#contact"
-            onClick={onClose}
-            className="py-2 text-foreground/90 hover:text-gold"
-          >
-            {labels.nav.contact}
-          </a>
+          <a href="#services" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.services}</a>
+          <a href="#approach" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.approach}</a>
+          <a href="#cases" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.cases}</a>
+          <a href="#why" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.why}</a>
+          <a href="#contact" onClick={onClose} className="py-2 text-foreground/90 hover:text-gold btn-click-effect grey-glow">{labels.nav.contact}</a>
 
           <div className="mt-2 flex items-center gap-2 text-xs border border-[var(--border)] rounded-full px-1 py-1 bg-[rgba(255,255,255,0.02)] w-max">
             {[
@@ -229,10 +198,8 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
                   setLang(l.code);
                   onClose();
                 }}
-                className={`px-2.5 py-1 rounded-full transition-colors ${
-                  isActive(l.code)
-                    ? "bg-[rgba(212,175,55,0.2)] text-gold"
-                    : "text-muted hover:text-foreground"
+                className={`px-2.5 py-1 rounded-full transition-colors btn-click-effect ${
+                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold golden-glow" : "text-muted hover:text-foreground grey-glow"
                 }`}
                 aria-pressed={isActive(l.code)}
                 aria-label={`Switch language to ${l.label}`}
@@ -242,11 +209,7 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             ))}
           </div>
 
-          <a
-            href="#contact"
-            onClick={onClose}
-            className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2"
-          >
+          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect golden-glow">
             {labels.ctaQuote}
           </a>
         </div>

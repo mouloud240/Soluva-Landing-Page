@@ -127,18 +127,18 @@ const Contact = ({ t, handleSubmit }) => {
                 <div className="flex flex-col gap-3 w-full">
                   <a
                     href="#lead"
-                    className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium"
+                    className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
                   >
                     {t.finalBookCta}
                   </a>
                   <a
                     href="tel:+10000000000"
-                    className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium"
+                    className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
                   >
                     {t.callLabel}
                   </a>
                 </div>
-                <button type="submit" className="btn-send w-full">
+                <button type="submit" className="btn-send w-full btn-click-effect golden-glow">
                   <svg
                     width="16"
                     height="16"
@@ -166,6 +166,9 @@ const Contact = ({ t, handleSubmit }) => {
           </div>
         </div>
       </div>
+      <footer className="text-center mt-30">
+        <p className="text-muted text-sm">{t.copyright}</p>
+      </footer>
     </section>
   );
 };
