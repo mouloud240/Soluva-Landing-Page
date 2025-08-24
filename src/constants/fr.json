@@ -55,7 +55,7 @@
     "Lancement",
     "Échelle & Support"
   ],
-  "cases": [ 
+  "cases": [
     {
       "title": "Suite Qurbani",
       "stat": "Transparence via IA",
@@ -75,7 +75,7 @@
       "image": "/screenshots/bsc.png"
     },
     {
-      "title": "Shop.co",
+      "title": "Amigo",
       "stat": "Plateforme e‑commerce mode",
       "detail": "Boutique en ligne de vêtements offrant une expérience d’achat fluide avec gestion de catalogue, paiement optimisé et infrastructure scalable.",
       "image": "/screenshots/amigo.png"
@@ -92,14 +92,13 @@
       "detail": "Plateforme qui connecte les étudiants à de réelles opportunités de stage, facilitant l’acquisition de compétences et le lancement de carrière.",
       "image": "/screenshots/growpath.jpg"
     },
-   
+
     {
       "title": "Plateforme PTU Learning",
       "stat": "Éducation numérique interactive",
       "detail": "Plateforme e-learning personnalisée avec gestion des cours, engagement des étudiants et distribution de contenu scalable.",
       "image": "/screenshots/ptu.png"
     }
-   
   ],
   "whyTiles": [
     {
