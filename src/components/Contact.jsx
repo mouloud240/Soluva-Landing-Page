@@ -126,7 +126,7 @@ const Contact = ({ t, handleSubmit }) => {
               <div className="sm:col-span-2 flex flex-col gap-3 w-full mt-1">
                 <div className="flex flex-col gap-3 w-full">
                   <a
-                    href="#lead"
+                    href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PeuCqrwKxwyZy4KAHV2ocMqIsgSI9ZWKLvKofxeLA9jBltQSyTnUL7-tXTtcYuknfy8sR-76l"
                     className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
                   >
                     {t.finalBookCta}
@@ -138,7 +138,10 @@ const Contact = ({ t, handleSubmit }) => {
                     {t.callLabel}
                   </a>
                 </div>
-                <button type="submit" className="btn-send w-full btn-click-effect golden-glow">
+                <button
+                  type="submit"
+                  className="btn-send w-full btn-click-effect golden-glow"
+                >
                   <svg
                     width="16"
                     height="16"
