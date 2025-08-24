@@ -19,13 +19,19 @@ export default function Navbar({ lang = "en", labels }) {
   const setLang = (nextLang) => {
     const params = new URLSearchParams(currentParams.toString());
     params.set("lang", nextLang);
-    router.push(`${pathname}?${params.toString()}${window.location.hash || ""}`, { scroll: false });
+    router.push(
+      `${pathname}?${params.toString()}${window.location.hash || ""}`,
+      { scroll: false },
+    );
   };
 
   const isActive = (l) => lang === l;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 h-max" style={{ transform: 'translateZ(0)' }}>
+    <header
+      className="fixed top-0 inset-x-0 z-50 h-max"
+      style={{ transform: "translateZ(0)" }}
+    >
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="mt-4 rounded-2xl border border-[var(--border)] bg-[rgba(0,0,0,0.5)] backdrop-blur supports-[backdrop-filter]:bg-[rgba(0,0,0,0.4)]">
           <nav className="flex items-center justify-between px-4 py-3">
@@ -146,12 +152,12 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
 
   return (
     <div
-      className={`fixed inset-0 z-[60] transition-opacity ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+      className={`fixed inset-0 z-[60] transition-opacity h-screen ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       aria-hidden={!open}
     >
       <div className="absolute inset-0 bg-black" onClick={onClose} />
       <aside
-        className={`absolute right-0 top-0 h-full w-[85%] max-w-[360px] bg-black border-l border-black shadow-xl transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`absolute right-0 top-0 w-[85%] max-w-[360px] bg-black border-l border-black shadow-xl transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
         role="dialog"
         aria-modal="true"
       >
@@ -179,11 +185,41 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
           </button>
         </div>
         <div className="p-4 flex flex-col gap-4 bg-black">
-          <a href="#services" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.services}</a>
-          <a href="#approach" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.approach}</a>
-          <a href="#cases" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.cases}</a>
-          <a href="#why" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.why}</a>
-          <a href="#contact" onClick={onClose} className="py-2 text-white hover:text-gold btn-click-effect">{labels.nav.contact}</a>
+          <a
+            href="#services"
+            onClick={onClose}
+            className="py-2 text-white hover:text-gold btn-click-effect"
+          >
+            {labels.nav.services}
+          </a>
+          <a
+            href="#approach"
+            onClick={onClose}
+            className="py-2 text-white hover:text-gold btn-click-effect"
+          >
+            {labels.nav.approach}
+          </a>
+          <a
+            href="#cases"
+            onClick={onClose}
+            className="py-2 text-white hover:text-gold btn-click-effect"
+          >
+            {labels.nav.cases}
+          </a>
+          <a
+            href="#why"
+            onClick={onClose}
+            className="py-2 text-white hover:text-gold btn-click-effect"
+          >
+            {labels.nav.why}
+          </a>
+          <a
+            href="#contact"
+            onClick={onClose}
+            className="py-2 text-white hover:text-gold btn-click-effect"
+          >
+            {labels.nav.contact}
+          </a>
 
           <div className="mt-2 flex items-center gap-2 text-xs border border-black rounded-full px-1 py-1 bg-black w-max">
             {[
@@ -198,7 +234,9 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
                   onClose();
                 }}
                 className={`px-2.5 py-1 rounded-full transition-colors btn-click-effect ${
-                  isActive(l.code) ? "bg-[rgba(212,175,55,0.2)] text-gold" : "text-white hover:text-gold"
+                  isActive(l.code)
+                    ? "bg-[rgba(212,175,55,0.2)] text-gold"
+                    : "text-white hover:text-gold"
                 }`}
                 aria-pressed={isActive(l.code)}
                 aria-label={`Switch language to ${l.label}`}
@@ -208,7 +246,16 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
             ))}
           </div>
 
-          <a href="#contact" onClick={onClose} className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect" style={{ backgroundColor: "#000", color: "#fff", border: "1px solid #000" }}>
+          <a
+            href="#contact"
+            onClick={onClose}
+            className="cta-primary h-11 px-6 inline-flex items-center justify-center text-sm font-medium mt-2 btn-click-effect"
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              border: "1px solid #000",
+            }}
+          >
             {labels.ctaQuote}
           </a>
         </div>
@@ -216,3 +263,4 @@ function MobileDrawer({ open, onClose, labels, isActive, setLang }) {
     </div>
   );
 }
+

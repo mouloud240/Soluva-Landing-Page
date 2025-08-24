@@ -1,4 +1,3 @@
-
 {
   "social": {
     "linkedin": "https://www.linkedin.com/company/108645820/admin/dashboard/",
@@ -58,56 +57,53 @@
   ],
   "cases": [
     {
+      "title": "Qurbani Management Suite",
+      "stat": "AI-powered transparency",
+      "detail": "End-to-end solution (mobile, backend, dashboard) with AI video validation, donation tracking, and NGO transparency.",
+      "image": "/screenshots/qurbani.jpg"
+    },
+    {
       "title": "IntelliPower",
       "stat": "Optimized energy operations",
       "detail": "Developed smart backend services for performance monitoring, reliability, and cost reduction in energy systems.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=IntelliPower"
+      "image": "/screenshots/intellipower.png"
     },
     {
       "title": "BSC Boumerdes",
       "stat": "Tourism & hospitality platform",
       "detail": "A platform for the Wilaya of Boumerdes to manage haubergs and hotels, while offering visitors an app to discover the best attractions and places in the region.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=BSC+Boumerdes"
+      "image": "/screenshots/bsc.png"
     },
     {
-      "title": "Shop.co",
+      "title": "Amigo",
       "stat": "E-commerce fashion platform",
       "detail": "Online clothing store providing a seamless shopping experience with optimized checkout, catalog management, and scalable infrastructure.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=Shop.co"
+      "image": "/screenshots/amigo.png"
     },
     {
-      "title": "TATWEER",
+      "title": "Trackiny",
       "stat": "Freighting platform",
       "detail": "Built a modern logistics and freighting platform to digitize operations, improve efficiency, and enable transparent transport management.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=TATWEER"
+      "image": "/screenshots/tatweer.png"
     },
     {
       "title": "GrowPath",
       "stat": "Internship discovery for students",
       "detail": "Platform connecting students with real internship opportunities, helping them grow skills and start careers faster.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=GrowPath"
-    },
-    {
-      "title": "Qurbani Management Suite",
-      "stat": "AI-powered transparency",
-      "detail": "End-to-end solution (mobile, backend, dashboard) with AI video validation, donation tracking, and NGO transparency.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=Qurbani"
+      "image": "/screenshots/growpath.jpg"
     },
     {
       "title": "PTU Learning Platform",
       "stat": "Interactive digital education",
       "detail": "Custom e-learning platform supporting courses, student engagement, and scalable content delivery.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=PTU+Platform"
-    },
-    {
-      "title": "EventHub",
-      "stat": "100k+ events processed",
-      "detail": "Lightweight event management platform with NestJS + PostgreSQL, email notifications, RSVPs, and real-time updates.",
-      "image": "https://placehold.co/600x400/d4af37/000000?text=EventHub"
+      "image": "/screenshots/ptu.png"
     }
   ],
   "whyTiles": [
-    { "k": "Business‑first", "v": "Outcomes over output: ROI, savings, growth." },
+    {
+      "k": "Business‑first",
+      "v": "Outcomes over output: ROI, savings, growth."
+    },
     { "k": "End‑to‑end", "v": "Design → deployment → maintenance." },
     { "k": "Transparent", "v": "Clear pricing, flexible engagement models." },
     { "k": "Bilingual", "v": "French, English, Arabic." }
