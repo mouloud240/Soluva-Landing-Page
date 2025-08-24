@@ -63,12 +63,6 @@
       "image": "/screenshots/qurbani.jpg"
     },
     {
-      "title": "IntelliPower",
-      "stat": "Optimisation énergétique",
-      "detail": "Développement de services backend intelligents pour le suivi des performances, la fiabilité et la réduction des coûts.",
-      "image": "/screenshots/intellipower.png"
-    },
-    {
       "title": "BSC Boumerdes",
       "stat": "Plateforme tourisme & hôtellerie",
       "detail": "Plateforme pour la wilaya de Boumerdes afin de gérer les auberges et hôtels, tout en offrant aux visiteurs une application pour découvrir les meilleurs lieux de la région.",
@@ -79,12 +73,6 @@
       "stat": "Plateforme e‑commerce mode",
       "detail": "Boutique en ligne de vêtements offrant une expérience d’achat fluide avec gestion de catalogue, paiement optimisé et infrastructure scalable.",
       "image": "/screenshots/amigo.png"
-    },
-    {
-      "title": "TATWEER",
-      "stat": "Plateforme de fret",
-      "detail": "Plateforme logistique et de fret digitalisée pour optimiser les opérations, améliorer l’efficacité et garantir la transparence du transport.",
-      "image": "/screenshots/tatweer.png"
     },
     {
       "title": "GrowPath",

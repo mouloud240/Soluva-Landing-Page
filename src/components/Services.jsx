@@ -1,7 +1,7 @@
-import React from 'react';
-import { Database, AppWindow, Cloud, Palette } from 'lucide-react';
+import React from "react";
+import { Database, AppWindow, Cloud, Palette, Bot } from "lucide-react";
 
-const icons = [<Database />, <AppWindow />, <Cloud />, <Palette />];
+const icons = [<Database />, <AppWindow />, <Cloud />, <Palette />, <Bot />];
 
 const Services = ({ t }) => {
   return (
@@ -26,7 +26,6 @@ const Services = ({ t }) => {
               </div>
               <h3 className="heading-lg text-xl font-semibold">{s.title}</h3>
               <p className="text-sm text-muted">{s.desc}</p>
-              {/* <p className="text-xs text-muted/80">{s.tech}</p> */}
             </div>
           ))}
         </div>

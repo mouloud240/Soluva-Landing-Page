@@ -45,6 +45,10 @@
     {
       "title": "UI/UX",
       "desc": "Interfaces that delight users and increase retention."
+    },
+    {
+      "title": "AI Solutions",
+      "desc": "Intelligent systems powered by AI to automate tasks, uncover insights, and drive smarter decisions."
     }
   ],
   "approachHeading": "Business‑Driven Engineering",
@@ -63,12 +67,6 @@
       "image": "/screenshots/qurbani.jpg"
     },
     {
-      "title": "IntelliPower",
-      "stat": "Optimized energy operations",
-      "detail": "Developed smart backend services for performance monitoring, reliability, and cost reduction in energy systems.",
-      "image": "/screenshots/intellipower.png"
-    },
-    {
       "title": "BSC Boumerdes",
       "stat": "Tourism & hospitality platform",
       "detail": "A platform for the Wilaya of Boumerdes to manage haubergs and hotels, while offering visitors an app to discover the best attractions and places in the region.",
@@ -79,12 +77,6 @@
       "stat": "E-commerce fashion platform",
       "detail": "Online clothing store providing a seamless shopping experience with optimized checkout, catalog management, and scalable infrastructure.",
       "image": "/screenshots/amigo.png"
-    },
-    {
-      "title": "Trackiny",
-      "stat": "Freighting platform",
-      "detail": "Built a modern logistics and freighting platform to digitize operations, improve efficiency, and enable transparent transport management.",
-      "image": "/screenshots/tatweer.png"
     },
     {
       "title": "GrowPath",
