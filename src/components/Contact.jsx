@@ -131,12 +131,21 @@ const Contact = ({ t, handleSubmit }) => {
                   >
                     {t.finalBookCta}
                   </a>
-                  <a
-                    href="tel:+10000000000"
-                    className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
-                  >
-                    {t.callLabel}
-                  </a>
+
+                  <div className="flex gap-3">
+                    <a
+                      href="tel:+213560620999"
+                      className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
+                    >
+                      Call 05 6062099
+                    </a>
+                    <a
+                      href="tel:+213696070598"
+                      className="cta-secondary h-11 px-5 inline-flex items-center justify-center text-sm font-medium btn-click-effect grey-glow"
+                    >
+                      Call 06 96070598
+                    </a>
+                  </div>
                 </div>
                 <button
                   type="submit"
