@@ -22,19 +22,13 @@ const Why = ({ t }) => {
         </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            {
-              q: "“They felt like a true partner focused on our KPIs.”",
-              a: "CEO, E‑commerce brand",
-            },
-            {
-              q: "“Clear communication, on time, and performance exceeded expectations.”",
-              a: "CTO, SaaS startup",
-            },
-            {
-              q: "“We scaled painlessly and cut infrastructure costs by 28%.”",
-              a: "Founder, Productivity app",
-            },
+[
           ].map((t) => (
+            <div key={t.q} className="card p-6">
+              <div className="mb-3">{t.q}</div>
+              <div className="text-sm text-muted">{t.a}</div>
+            </div>
+          ))          ].map((t) => (
             <div key={t.q} className="card p-6">
               <div className="mb-3">{t.q}</div>
               <div className="text-sm text-muted">{t.a}</div>
